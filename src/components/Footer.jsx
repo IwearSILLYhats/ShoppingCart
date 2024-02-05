@@ -1,6 +1,8 @@
+import styles from "../styles/Footer.module.css"
+
 function Footer () {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <ul>
                 <h5>Help</h5>
                 <li>Order Status</li>

@@ -1,9 +1,10 @@
+import styles from "../styles/Navbar.module.css"
+import Logo from "./Logo"
+
 function Navbar () {
     return (
-        <nav>
-            <picture>
-                <img src="" alt="Logo of a shirt" />
-            </picture>
+        <nav className={styles.navbar}>
+            <Logo />
             <ul>
                 <li>Menu</li>
                 <li>Prices</li>

@@ -1,0 +1,17 @@
+.logo {
+    background-color: #212121;
+    padding: .5rem;
+    color: white;
+    font-size: 50%;
+    text-align: center;
+}
+
+.logo > div {
+    border: 3px solid white;
+    padding: .5rem;
+}
+
+.logo img{
+    width: 3rem;
+    height: 3rem;
+}
