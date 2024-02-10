@@ -5,22 +5,22 @@ import { Link } from "react-router-dom"
 function Navbar () {
     return (
         <nav className={styles.navbar}>
-            <Link to={`/`}>
+            <Link to={``}>
             <Logo />
             </Link>
             <ul>
                 <li>
-                    <Link to={`/store`}>
+                    <Link to={`store`}>
                     Store
                     </Link>
                 </li>
                 <li>
-                    <Link to={`/blog`}>
+                    <Link to={`blog`}>
                     Blog
                     </Link>
                 </li>
                 <li>
-                    <Link to={`/contact`}>
+                    <Link to={`contact`}>
                     Contact Us
                     </Link>
                 </li>

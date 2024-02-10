@@ -15,7 +15,7 @@ const Router = () => {
             errorElement: <ErrorPage />,
             children: [
                 {
-                    path: "home",
+                    path: "/",
                     element: <Home />,
                 },
                 {
@@ -30,9 +30,9 @@ const Router = () => {
                     path: "contact",
                     element: <Contact />,
                 },
-            ]
+            ],
         },
-    ])
+    ]);
 
     return <RouterProvider router={router} />;
 };
