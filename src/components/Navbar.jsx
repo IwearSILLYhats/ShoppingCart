@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 function Navbar () {
     return (
         <nav className={styles.navbar}>
-            <Link to={``}>
+            <Link to={`/`}>
             <Logo />
             </Link>
             <ul>
@@ -22,6 +22,11 @@ function Navbar () {
                 <li>
                     <Link to={`contact`}>
                     Contact Us
+                    </Link>
+                </li>
+                <li>
+                    <Link to={`cart`}>
+                        Cart
                     </Link>
                 </li>
             </ul>

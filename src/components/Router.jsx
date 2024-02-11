@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../App";
 import Blog from "../Blog";
-import Contact from "../Contact"
+import Cart from "../Cart";
+import Contact from "../Contact";
 import ErrorPage from "../ErrorPage";
 import Home from "../Home";
 import Store from "../Store";
@@ -29,6 +30,11 @@ const Router = () => {
                 {
                     path: "contact",
                     element: <Contact />,
+                },
+                {
+                    path: "cart",
+                    element: <Cart />,
+                    errorElement: <ErrorPage />,
                 },
             ],
         },
