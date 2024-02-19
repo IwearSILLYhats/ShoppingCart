@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import useLocal from "./scripts/useLocal"
+import useLocal from "./scripts/useLocal";
+import StoreItem from "./components/StoreItem"
+import styles from "./styles/Store.module.css"
 
 function Store () {
     const [catelogue, setCatelogue] = useLocal('catelogue', null);
@@ -14,10 +16,15 @@ function Store () {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     if(error) return <p>{error.status}</p>;
+    if(!catelogue) return <p>Loading...</p>
     return (
-        <>
-        <p>A page with store stuff on it.</p>
-        </>
+        <div className={styles.store}>
+        {catelogue.map((product) => {
+            console.log(product)
+            return (
+            <StoreItem item={product} key={product.id} />
+            )})}
+        </div>
     )
 }
 
