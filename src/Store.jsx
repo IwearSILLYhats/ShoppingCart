@@ -20,7 +20,6 @@ function Store () {
     return (
         <div className={styles.store}>
         {catelogue.map((product) => {
-            console.log(product)
             return (
             <StoreItem item={product} key={product.id} />
             )})}
