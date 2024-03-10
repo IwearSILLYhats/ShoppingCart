@@ -1,4 +1,9 @@
 import styles from "../styles/Footer.module.css"
+import facebook from "/src/assets/facebook.svg"
+import googlePlay from "/src/assets/googlePlay.svg"
+import instagram from "/src/assets/instagram.svg"
+import pinterest from "/src/assets/pinterest.svg"
+import youtube from "/src/assets/youtube.svg"
 
 function Footer () {
     return (
@@ -25,11 +30,11 @@ function Footer () {
             </ul>
             </div>
             <div id="icons">    
-            <img src="src/assets/googlePlay.svg" alt="Get it on Google Play" />
-            <img src="src/assets/instagram.svg" alt="Instagram" />
-            <img src="src/assets/facebook.svg" alt="Facebook" />
-            <img src="src/assets/pinterest.svg" alt="Pinterest" />
-            <img src="src/assets/youtube.svg" alt="Youtube" />
+            <img src={googlePlay} alt="Get it on Google Play" />
+            <img src={instagram} alt="Instagram" />
+            <img src={facebook} alt="Facebook" />
+            <img src={pinterest} alt="Pinterest" />
+            <img src={youtube} alt="Youtube" />
             </div>
             <div id="bottom-links">
                 <div>

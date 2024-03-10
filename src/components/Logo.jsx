@@ -1,11 +1,12 @@
 import styles from "../styles/Logo.module.css"
+import logo from "../assets/shirt.svg"
 
 function Logo () {
     return (
         <div className={styles.logo}>
             <div>
                 <picture>
-                    <img src="src/assets/shirt.svg" alt="Shirt" />
+                    <img src={logo} alt="Shirt" />
                 </picture>
                 <h5>Fakestore</h5>
             </div>
